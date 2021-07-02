@@ -1,0 +1,18 @@
+.button {
+  background-color: $orange;
+  color: $black;
+
+  &:hover {
+    background-color: $white;
+  }
+
+  &--bars {
+    background-color: transparent;
+    border: none;
+    color: $white;
+
+    &:hover {
+      color: $orange;
+    }
+  }
+}
