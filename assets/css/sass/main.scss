@@ -3,13 +3,18 @@
 //abstracts
 @import 'abstracts/variables';
 @import 'abstracts/mixins';
+@import 'abstracts/utilities';
 //vendors
 //@import 'vendors/bootstrap/bootstrap';
 //base
 @import 'base/reset';
+@import 'base/base';
 @import 'base/typography';
 //layout
+@import 'layout/grid';
 @import 'layout/navbar';
+@import 'layout/header';
+@import 'layout/article';
 //components
 @import 'components/button';
 //pages

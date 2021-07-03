@@ -1,0 +1,12 @@
+.header {
+  width: 100%;
+  text-align: center;
+
+  &__img {
+    width: 100%;
+
+    @include response-to('device-large') {
+      width: 50%;
+    }
+  }
+}

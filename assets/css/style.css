@@ -1,3 +1,24 @@
+.width-100 {
+  width: 100%;
+}
+
+.width-75 {
+  width: 75%;
+}
+
+.width-50 {
+  width: 50%;
+}
+
+.width-25 {
+  width: 25%;
+}
+
+.rounded-black {
+  border: 2px solid #000000;
+  border-radius: 50%;
+}
+
 html {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -13,8 +34,28 @@ html {
   margin: 0;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 body {
   font-family: "Poppins", sans-serif;
+}
+
+@media (min-width: 991.98px) {
+  .grid {
+    display: grid;
+    grid-area: "s-programming-languages s-courses" auto/1fr 1fr;
+  }
+}
+
+.s-programming-languages {
+  grid-area: s-programming-languages;
+}
+
+.s-courses {
+  grid-area: s-courses;
 }
 
 .navbar {
@@ -66,6 +107,36 @@ body {
 .navbar__logo {
   width: 50px;
   height: 50px;
+}
+
+.header {
+  width: 100%;
+  text-align: center;
+}
+.header__img {
+  width: 100%;
+}
+@media (min-width: 991.98px) {
+  .header__img {
+    width: 50%;
+  }
+}
+
+.article {
+  border: 2px solid #000000;
+  padding: 20px 10%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.article__title--bg-gray {
+  width: 100%;
+  background-color: gray;
+  color: #FFF;
+  text-align: center;
+}
+.article__p {
+  text-align: justify;
 }
 
 .button {

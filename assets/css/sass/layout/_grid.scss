@@ -1,0 +1,15 @@
+.grid {
+  @include response-to('device-large') {
+    display: grid;
+    grid-area:
+      "s-programming-languages s-courses"auto/ 1fr 1fr;
+  }
+}
+
+.s-programming-languages {
+  grid-area: s-programming-languages;
+}
+
+.s-courses {
+  grid-area: s-courses;
+}
