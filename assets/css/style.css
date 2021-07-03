@@ -14,9 +14,25 @@
   width: 25%;
 }
 
-.rounded-black {
+.rounded {
   border: 2px solid #000000;
   border-radius: 50%;
+}
+
+.border-solid {
+  border: 2px solid #000000;
+}
+
+.border-dotted {
+  border: 2px dotted #000000;
+}
+
+.p-20 {
+  padding: 20px;
+}
+
+.mt-10 {
+  margin-top: 10px;
 }
 
 html {
@@ -35,7 +51,7 @@ html {
 }
 
 img {
-  max-width: 100%;
+  width: 100%;
   height: auto;
 }
 
@@ -43,19 +59,18 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
+.grid {
+  width: 100%;
+  padding: 5%;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 40px;
+}
 @media (min-width: 991.98px) {
   .grid {
-    display: grid;
-    grid-area: "s-programming-languages s-courses" auto/1fr 1fr;
+    padding: 15px;
+    grid-template-columns: 1fr 1fr;
   }
-}
-
-.s-programming-languages {
-  grid-area: s-programming-languages;
-}
-
-.s-courses {
-  grid-area: s-courses;
 }
 
 .navbar {
@@ -68,6 +83,11 @@ body {
   justify-content: space-between;
   align-items: center;
   position: relative;
+}
+@media (min-width: 991.98px) {
+  .navbar {
+    padding: 0 15px;
+  }
 }
 .navbar__menu {
   width: 100%;
@@ -123,8 +143,7 @@ body {
 }
 
 .article {
-  border: 2px solid #000000;
-  padding: 20px 10%;
+  padding: 10px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -137,6 +156,15 @@ body {
 }
 .article__p {
   text-align: justify;
+}
+
+.footer {
+  background-color: #000000;
+  color: #FFF;
+  padding: 40px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .button {

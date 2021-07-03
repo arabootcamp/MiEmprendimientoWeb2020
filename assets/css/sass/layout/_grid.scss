@@ -1,15 +1,12 @@
 .grid {
+  width: 100%;
+  padding: 5%;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 40px;
+
   @include response-to('device-large') {
-    display: grid;
-    grid-area:
-      "s-programming-languages s-courses"auto/ 1fr 1fr;
+    padding: 15px;
+    grid-template-columns: 1fr 1fr;
   }
-}
-
-.s-programming-languages {
-  grid-area: s-programming-languages;
-}
-
-.s-courses {
-  grid-area: s-courses;
 }
