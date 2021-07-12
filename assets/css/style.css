@@ -124,7 +124,7 @@ h2 {
   font-size: 1.875rem;
 }
 
-h3 {
+h3, i {
   font-size: 1.25rem;
 }
 
@@ -576,13 +576,22 @@ h3 {
   padding: 10px;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
+}
+.article__title {
+  margin: 20px 0;
 }
 .article__title--bg-gray {
   width: 100%;
   background-color: gray;
   color: #FFF;
   text-align: center;
+}
+.article__title--center {
+  align-self: center;
+}
+.article__subtitle {
+  margin: 20px 0;
 }
 .article__p {
   text-align: justify;
@@ -593,11 +602,22 @@ h3 {
 }
 .article__img--s-courses {
   width: 50%;
+  align-self: center;
 }
 @media (min-width: 991.98px) {
   .article__img--s-courses {
     width: 25%;
   }
+}
+.article__ul {
+  margin-bottom: 20px;
+}
+.article__a {
+  text-decoration: none;
+}
+.article__group--center {
+  align-self: center;
+  margin-bottom: 20px;
 }
 
 .footer {
