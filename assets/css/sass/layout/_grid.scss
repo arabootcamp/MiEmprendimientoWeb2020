@@ -1,12 +1,41 @@
-.grid {
-  width: 100%;
-  padding: 5%;
+.row {
   display: grid;
-  grid-template-columns: 1fr;
-  gap: 40px;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 20px 25px;
 
-  @include response-to('device-large') {
-    padding: 15px;
-    grid-template-columns: 1fr 1fr;
+}
+
+/*Columns Default*/
+@for $i from 12 through 1 {
+  .col-#{$i} {
+    grid-column: span $i;
+  }
+
+  //Device small (min-width: 575.98px)
+  .col-sm-#{$i} {
+    @include response-to('device-small') {
+      grid-column: span $i;
+    }
+  }
+
+  //Device medium (min-width: 767.98px)
+  .col-md-#{$i} {
+    @include response-to('device-medium') {
+      grid-column: span $i;
+    }
+  }
+
+  //Device large (min-width: 991.98px)
+  .col-lg-#{$i} {
+    @include response-to('device-large') {
+      grid-column: span $i;
+    }
+  }
+
+  //Device xlarge (min-width: 1199.98px),
+  .col-xl-#{$i} {
+    @include response-to('device-xlarge') {
+      grid-column: span $i;
+    }
   }
 }

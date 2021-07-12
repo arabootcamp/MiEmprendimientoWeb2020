@@ -10,16 +10,16 @@
 @import 'base/reset';
 @import 'base/base';
 @import 'base/typography';
+@import 'base/animation';
 //layout
 @import 'layout/grid';
 @import 'layout/navbar';
 @import 'layout/header';
-@import 'layout/s-programming-languages';
 @import 'layout/article';
 @import 'layout/footer';
+@import 'layout/form';
 //components
 @import 'components/button';
+@import 'components/svg-animation';
 //pages
 //themes
-
-

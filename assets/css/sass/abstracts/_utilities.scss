@@ -1,36 +1,46 @@
-.width-100 {
+.container-custom {
+  max-width: 1920px;
+  min-height: 100vh;
+  margin: auto;
+
+  @include response-to('device-large') {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+      0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+}
+
+.container {
   width: 100%;
+  padding: 0 15px;
 }
 
-.width-75 {
-  width: 75%;
+@for $i from 1 through 4 {
+  .width-#{(25*$i)} {
+    width: 25%*$i;
+  }
+
+  .height-#{(25*$i)} {
+    height: 25%*$i;
+  }
+
+  .p-#{(10*$i)} {
+    padding: 10*$i+px;
+  }
+
+  .mt-#{(10*$i)} {
+    margin-top: 10*$i+px;
+  }
 }
 
-.width-50 {
-  width: 50%;
-}
-
-.width-25 {
-  width: 25%;
-}
-
-.rounded{
+.rounded {
   border: 2px solid $black;
   border-radius: 50%;
 }
 
-.border-solid{
+.border {
   border: 2px solid $black;
-}
 
-.border-dotted {
-  border: 2px dotted $black;
-}
-
-.p-20{
-  padding: 20px;
-}
-
-.mt-10{
-  margin-top: 10px;
+  &--dotted {
+    border-style: dotted;
+  }
 }

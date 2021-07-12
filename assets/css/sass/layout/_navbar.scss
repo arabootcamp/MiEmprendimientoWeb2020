@@ -9,8 +9,8 @@
   align-items: center;
   position: relative;
 
-  @include response-to('device-large'){
-     padding: 0 15px;
+  @include response-to('device-large') {
+    padding: 0 15px;
   }
 
   &__menu {
@@ -43,6 +43,7 @@
 
   &__bars {
     display: inline-block;
+
     @include response-to('device-large') {
       display: none;
     }

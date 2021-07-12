@@ -16,4 +16,16 @@
   &__p {
     text-align: justify;
   }
+
+  &__img{
+    width: 100%;
+    height: auto;
+
+    &--s-courses{
+      width: 50%;
+      @include response-to('device-large'){
+        width: 25%;
+      }
+    }
+  }
 }
