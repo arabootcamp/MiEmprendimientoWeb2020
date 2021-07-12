@@ -616,7 +616,7 @@ i {
   width: 50%;
   align-self: center;
 }
-@media (min-width: 991.98px) {
+@media (min-width: 767.98px) {
   .article__img--s-courses {
     width: 25%;
   }
