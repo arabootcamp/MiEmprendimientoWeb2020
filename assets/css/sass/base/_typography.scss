@@ -1,13 +1,18 @@
-body{
+body {
   font-family: 'Poppins',
-  sans-serif;
+    sans-serif;
   font-size: ($medium/16px)+rem;
 }
 
-h2 { 
-  font-size: ($x-large/16px)+rem;
+h2 {
+  font-size: (($x-large - 4px)/16px)+rem;
+
+  @include response-to('device-xsmall') {
+    font-size: ($x-large/16px)+rem;
+  }
 }
 
-h3,i {
-    font-size: ($large/16px)+rem;
+h3,
+i {
+  font-size: ($large/16px)+rem;
 }

@@ -32,13 +32,12 @@ $small: 14px;
 $x-small: 12px;
 
 //Device variables
-$map-breakpoints: (
+$map-breakpoints: ('device-xsmall': (min-width: 320px),
   'device-small': (min-width: 575.98px),
   'device-medium': (min-width: 767.98px),
   'device-large': (min-width: 991.98px),
   'device-xlarge': (min-width: 1199.98px),
-  'device-xxlarge':(min-width:1400px)
-);
+  'device-xxlarge':(min-width:1400px));
 
 ///////////////////////
 //Variables Boostrap//
